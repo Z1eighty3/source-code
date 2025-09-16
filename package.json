@@ -1,0 +1,33 @@
+{
+  "name": "ZI3X",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Waterpark Simulator Mod",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.zix.waterpark",
+    "productName": "ZI3X",
+    "win": {
+      "target": "nsis",
+      "icon": "favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerSidebar": "favicon.ico",
+      "uninstallerSidebar": "favicon.ico",
+      "installerHeaderIcon": "favicon.ico",
+      "runAfterFinish": true,
+      "artifactName": "ZI3X Installer Setup.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
